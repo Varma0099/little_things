@@ -15,13 +15,19 @@ const HomePage = () => {
       caption: "Create Beautiful Ceramics"
     },
     {
-      src: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1200&h=600&fit=crop",
+          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSnBeyJlVtB78qrVQuWvWQPaUnjBhEG0ioYw&s",
+      
       alt: "Art and painting session",
       caption: "Express Yourself Through Art"
     },
     {
-      src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=600&fit=crop",
+      src: "https://i.pinimg.com/736x/d4/d4/ee/d4d4ee8b3f45e22fa9306a1255c76d5c.jpg",
       alt: "Community crafting space",
+      caption: "Connect & Create Together"
+    },
+    {
+      src: "https://i.pinimg.com/736x/f7/4e/4a/f74e4a170f45ef78a44e806c77d48517.jpg",
+      alt: "Traditional Dance Center",
       caption: "Connect & Create Together"
     }
   ];
