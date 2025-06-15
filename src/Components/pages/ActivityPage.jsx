@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from '../common/Carousel';
-import { Clock, Users, Star, Sparkles, ArrowRight, Palette, ChefHat, Paintbrush, Heart } from 'lucide-react';
+import { Clock, Users, Star, Sparkles, ArrowRight, Palette, ChefHat, Paintbrush, Heart, Music, Camera, Trophy, Network, Briefcase } from 'lucide-react';
 
 // Floating animation component
 const FloatingElement = ({ children, className, delay = 0 }) => {
@@ -47,7 +47,8 @@ const ActivitiesPage = () => {
         }
       ],
       description: "Immerse yourself in the ancient art of pottery making, where earth meets creativity. Feel the therapeutic touch of clay as you shape your imagination into beautiful, functional pieces that tell your unique story.",
-      highlights: ["Wheel throwing techniques", "Hand-building methods", "Glazing & firing process", "Take home your creations"]
+      highlights: ["Wheel throwing techniques", "Hand-building methods", "Glazing & firing process", "Take home your creations"],
+      businessFeatures: ["Pottery exhibitions", "Custom pottery commissions", "Corporate team building", "Private pottery parties"]
     },
     {
       title: "Ceramic Crafting",
@@ -70,7 +71,8 @@ const ActivitiesPage = () => {
         }
       ],
       description: "Explore the vibrant world of ceramic crafting where colors dance with clay. Transform simple ceramic pieces into stunning masterpieces through painting, glazing, and decorative techniques.",
-      highlights: ["Ceramic painting", "Decorative glazing", "Pattern making", "Color theory application"]
+      highlights: ["Ceramic painting", "Decorative glazing", "Pattern making", "Color theory application"],
+      businessFeatures: ["Art gallery showcases", "Ceramic art sales", "Private ceramic parties", "Wedding favor creation"]
     },
     {
       title: "Art & Painting",
@@ -93,30 +95,80 @@ const ActivitiesPage = () => {
         }
       ],
       description: "Unleash your inner artist in our inspiring art studio. From watercolors to acrylics, discover different mediums and techniques while creating artwork that reflects your personal vision and style.",
-      highlights: ["Multiple art mediums", "Technique workshops", "Personal guidance", "Portfolio development"]
+      highlights: ["Multiple art mediums", "Technique workshops", "Personal guidance", "Portfolio development"],
+      businessFeatures: ["Art exhibitions", "Commission artwork", "Corporate art workshops", "Live painting events"]
     },
     {
-      title: "Open Kitchen Experience",
+      title: "Creative Food Center",
       icon: ChefHat,
       gradient: "from-emerald-500 to-teal-600",
       bgGradient: "from-emerald-50 to-teal-100",
       hoverGradient: "group-hover:from-emerald-100 group-hover:to-teal-200",
       images: [
         {
-          src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-          alt: "People cooking together in open kitchen"
+          src: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&h=400&fit=crop",
+          alt: "Colorful creative snacks and treats"
         },
         {
-          src: "https://images.unsplash.com/photo-1556909114-65e30c5d6b2c?w=600&h=400&fit=crop",
-          alt: "Fresh ingredients and cooking utensils"
+          src: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop",
+          alt: "Live food customization station"
         },
         {
-          src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-          alt: "Delicious homemade snacks"
+          src: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&h=400&fit=crop",
+          alt: "Unique snacks loved by children"
         }
       ],
-      description: "Combine creativity with culinary delights in our open kitchen. Cook, create, and connect while preparing delicious snacks and meals that complement your artistic journey perfectly.",
-      highlights: ["Fresh ingredients", "Cooking workshops", "Recipe sharing", "Culinary creativity"]
+      description: "Fuel your creativity at our unique food center featuring specially crafted snacks and treats that delight both children and adults. Watch as our chefs customize your food live, creating personalized culinary experiences that match your creative energy.",
+      highlights: ["Live food customization", "Kid-friendly unique snacks", "Instagram-worthy treats", "Creative food presentations"],
+      businessFeatures: ["Custom party catering", "Themed food events", "Corporate snack services", "Birthday party packages"]
+    },
+    {
+      title: "Bharatanatyam Dance",
+      icon: Music,
+      gradient: "from-amber-500 to-red-600",
+      bgGradient: "from-amber-50 to-red-100",
+      hoverGradient: "group-hover:from-amber-100 group-hover:to-red-200",
+      images: [
+        {
+          src: "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=600&h=400&fit=crop",
+          alt: "Bharatanatyam dancer in traditional costume"
+        },
+        {
+          src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
+          alt: "Classical dance practice session"
+        },
+        {
+          src: "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?w=600&h=400&fit=crop",
+          alt: "Traditional dance performance"
+        }
+      ],
+      description: "Discover the divine art of Bharatanatyam, where every movement tells a story and every gesture carries deep meaning. Learn this classical Indian dance form that combines grace, spirituality, and artistic expression while connecting with our talent network for performance opportunities.",
+      highlights: ["Classical technique training", "Mudras & expressions", "Performance opportunities", "Cultural storytelling"],
+      businessFeatures: ["Cultural event performances", "Wedding dance shows", "Corporate cultural programs", "Talent showcase events"]
+    },
+    {
+      title: "Acting Studio & Talent Hub",
+      icon: Camera,
+      gradient: "from-blue-500 to-purple-600",
+      bgGradient: "from-blue-50 to-purple-100",
+      hoverGradient: "group-hover:from-blue-100 group-hover:to-purple-200",
+      images: [
+        {
+          src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+          alt: "Acting workshop in progress"
+        },
+        {
+          src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&h=400&fit=crop",
+          alt: "Actors performing on stage"
+        },
+        {
+          src: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&h=400&fit=crop",
+          alt: "Film production behind the scenes"
+        }
+      ],
+      description: "Transform into the performer you've always dreamed of being in our comprehensive acting studio. More than just learning - we connect you with industry professionals, showcase your talent, and create opportunities for private events, commercials, and performances.",
+      highlights: ["Method acting techniques", "Voice & diction training", "Camera acting skills", "Stage presence development"],
+      businessFeatures: ["Talent representation", "Event performer booking", "Commercial casting", "Private show productions"]
     }
   ];
 
@@ -136,6 +188,12 @@ const ActivitiesPage = () => {
         <FloatingElement className="absolute top-1/2 right-16" delay={2}>
           <Star className="w-5 h-5 text-purple-400/60" />
         </FloatingElement>
+        <FloatingElement className="absolute top-1/4 left-1/3" delay={1.5}>
+          <Music className="w-6 h-6 text-amber-500/60" />
+        </FloatingElement>
+        <FloatingElement className="absolute bottom-1/4 right-1/4" delay={0.5}>
+          <Camera className="w-5 h-5 text-blue-400/60" />
+        </FloatingElement>
       </div>
 
       {/* Hero Section */}
@@ -147,7 +205,7 @@ const ActivitiesPage = () => {
             <div className="mb-6">
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-pink-500/20 to-orange-500/20 text-pink-700 border border-pink-200 backdrop-blur-sm">
                 <Sparkles className="w-4 h-4 mr-2" />
-                Creative Experiences
+                Creative Experiences & Talent Hub
               </span>
             </div>
             
@@ -156,7 +214,7 @@ const ActivitiesPage = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Discover a world of creativity through our carefully curated activities. Each experience is designed to inspire, teach, and create lasting memories.
+              Discover a world of creativity through our carefully curated activities. Each experience is designed to inspire, teach, create lasting memories, and connect you with a vibrant community of artists and performers.
             </p>
           </div>
         </div>
@@ -212,6 +270,22 @@ const ActivitiesPage = () => {
                     </div>
                   </div>
 
+                  {/* Business Features Section */}
+                  <div className={`p-6 bg-gradient-to-br from-indigo-50 to-blue-100 rounded-2xl border border-white/50 transition-all duration-300`}>
+                    <h4 className="font-semibold text-gray-800 mb-4 flex items-center">
+                      <Briefcase className="w-4 h-4 mr-2 text-indigo-500" />
+                      Business & Networking Opportunities
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {activity.businessFeatures?.map((feature, i) => (
+                        <div key={i} className="flex items-center text-gray-700">
+                          <div className="w-2 h-2 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-full mr-3"></div>
+                          <span className="text-sm">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
                   {/* Info Cards */}
                   <div className="flex flex-wrap gap-4 text-sm">
                     <div className="flex items-center space-x-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30">
@@ -253,7 +327,8 @@ const ActivitiesPage = () => {
               Ready to Start Creating?
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Join our community of artists and discover the joy of hands-on creativity. 
+              Join our community of artists, dancers, actors, and creators. Discover the joy of hands-on creativity, 
+              showcase your talents, and connect with opportunities for private events and performances. 
               Every activity is a new adventure waiting to unfold.
             </p>
             <button className="group px-12 py-4 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 text-white rounded-full font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
